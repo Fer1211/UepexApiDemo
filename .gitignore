@@ -416,3 +416,21 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# === Custom rules for Uepex API ===
+# Prevent sensitive or local settings from being uploaded
+appsettings.Development.json
+appsettings.Local.json
+appsettings.*.local.json
+
+# Ignore database files if you use LocalDB or SQLite
+*.db
+*.mdf
+*.ldf
+
+# Ignore Visual Studio publish profiles
+Properties/PublishProfiles/
+
+# Ignore user secrets folder (for sensitive keys)
+secrets.json
+
