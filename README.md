@@ -125,31 +125,31 @@ The project follows best practices for backend development in .NET Core environm
 ## 📸 Preview
 
 ### 🧠 Project Structure / Estructura del proyecto
-![Project Structure](Docs/project_structure.png)
+![Project Structure](docs/project_structure.png)
 
 ### 🔐 Login Success (Console) / Inicio de sesión exitoso (Consola)
-![Login Success (Console)](Docs/login_success_console.png)
+![Login Success (Console)](docs/login_success_console.png)
 
 ### 🧾 Swagger UI (Endpoints) / Interfaz de usuario Swagger (Endpoints)
-![Swagger UI (Endpoints)](Docs/swagger_ui.png)
+![Swagger UI (Endpoints)](docs/swagger_ui.png)
 
 ### 🪄 JWT Response / Respuesta JWT
-![JWT Response](Docs/jwt_response.png)
+![JWT Response](docs/jwt_response.png)
 
 ### 📗 Export Excel / Exportar Excel
-![Exportar Excel](Docs/ExcelExport.png)
+![Exportar Excel](docs/ExcelExport.png)
 
 ### 📄 Export CSV / Exportar CSV
-![Exportar CSV](Docs/CSVExport.png)
+![Exportar CSV](docs/CSVExport.png)
 
 ### 🗄️ Database View (Tables) / Vista base de datos (tablas)
-![Database View (Tables)](Docs/database_tables.png)
+![Database View (Tables)](docs/database_tables.png)
 
 ### 🗂️ DB Diagram / Diagrama DB
-![DB Diagram](Docs/database_tables.png)
+![DB Diagram](docs/database_tables.png)
 
 ### 📋 Logs / Servicio de Autenticación
-![Logs](Docs/log_detail.png)
+![Logs](docs/log_detail.png)
 
 ## 🤝 Contributions & Suggestions
 Contributions, issues, and feature requests are welcome!
