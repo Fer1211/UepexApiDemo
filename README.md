@@ -17,14 +17,23 @@ This project is part of my **developer portfolio**, showcasing authentication lo
 📦 **Project Structure**
 
 UepexApiDemo/
+
 ┣ 📁 Controllers/
+
 ┣ 📁 Data/
+
 ┣ 📁 Models/
+
 ┣ 📁 Services/
+
 ┣ 📜 Program.cs
+
 ┣ 📜 appsettings.json
+
 ┣ 📜 appsettings.Development.json
+
 ┣ 📜 UepexApiDemo.csproj
+
 ┗ 📜 README.md
 
 
