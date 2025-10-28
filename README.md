@@ -88,9 +88,9 @@ The project follows best practices for backend development in .NET Core environm
 
 
 
-## ✨ Key Features
+# ✨ Key Features
 
-# Authentication Flow:
+## Authentication Flow:
 
 - Controller: AuthController.cs
 
@@ -100,7 +100,7 @@ The project follows best practices for backend development in .NET Core environm
 
 - Token generation in AuthController using JwtSecurityTokenHandler
 
-# Database & Persistence:
+## Database & Persistence:
 
 - Context: ApplicationDbContext.cs
 
@@ -108,7 +108,7 @@ The project follows best practices for backend development in .NET Core environm
 
 - EF Core used for migrations, seeding, and validation
 
-# Logging:
+## Logging:
 
 - ILogger integrated in both Controller and Service for real-time debug tracing
 
