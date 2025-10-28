@@ -76,10 +76,13 @@ The API will start on:
 Uepex API Demo simulates a secure backend service for authentication and user management.
 It demonstrates how to:
 
-Implement secure password hashing
-Build clean service-based architecture
-Use dependency injection and logging
-Manage database seeding and migrations
+- Implement secure password hashing
+  
+- Build clean service-based architecture
+  
+- Use dependency injection and logging
+  
+- Manage database seeding and migrations
 
 The project follows best practices for backend development in .NET Core environments and can be used as a base for production-grade APIs.
 
@@ -87,27 +90,27 @@ The project follows best practices for backend development in .NET Core environm
 
 ## ✨ Key Features
 
-Authentication Flow:
+# Authentication Flow:
 
-Controller: AuthController.cs
+- Controller: AuthController.cs
 
-Service: UsuarioService.cs
+- Service: UsuarioService.cs
 
-Password hashing & verification via BCrypt.Net.BCrypt
+- Password hashing & verification via BCrypt.Net.BCrypt
 
-Token generation in AuthController using JwtSecurityTokenHandler
+- Token generation in AuthController using JwtSecurityTokenHandler
 
-Database & Persistence:
+# Database & Persistence:
 
-Context: ApplicationDbContext.cs
+- Context: ApplicationDbContext.cs
 
-Entities: Usuario, Estudiante
+- Entities: Usuario, Estudiante
 
-EF Core used for migrations, seeding, and validation
+- EF Core used for migrations, seeding, and validation
 
-Logging:
+# Logging:
 
-ILogger integrated in both Controller and Service for real-time debug tracing
+- ILogger integrated in both Controller and Service for real-time debug tracing
 
 
 ## 📸 Preview
