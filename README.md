@@ -39,16 +39,14 @@ git clone https://github.com/Fer1211/UepexApiDemo.git
 cd UepexApiDemo
 
 2️⃣ Restore dependencies
-
-(dotnet restore)
+dotnet restore
 
 3️⃣ Apply migrations (creates the local database)
-
-(dotnet ef database update)
+dotnet ef database update
 
 4️⃣ Run the API
+dotnet run
 
-(dotnet run)
 
 The API will start on
 ➡️ http://localhost:5003
@@ -72,21 +70,25 @@ The API will start on
 🧰 Swagger for API documentation and testing
 
 ✨ Key Features & Architecture
-
-- Authentication Flow
+🔑 Authentication Flow
 
 Controller: AuthController.cs
+
 Service: UsuarioService.cs
-Password hashing & verification via BCrypt.Net.BCrypt
+
+Password verification via BCrypt.Net.BCrypt
+
 Token generation in AuthController using JwtSecurityTokenHandler
 
-- Database & Persistence
+🗂️ Database & Persistence
 
 Context: ApplicationDbContext.cs
+
 Entities: Usuario, Estudiante
+
 EF Core used for migrations, seeding, and validation
 
-- Logging
+🧾 Logging
 
 ILogger integrated in both Controller and Service for real-time debug tracing
 
