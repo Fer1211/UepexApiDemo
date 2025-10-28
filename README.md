@@ -63,37 +63,29 @@ The API will start on:
 ```
 
 👤 Default User
-Usuario	Contraseña	Rol
-admin	admin1234	Administrador
+
+| Usuario | Contraseña | Rol           |
+| ------- | ---------- | ------------- |
+| admin   | admin1234  | Administrador |
+
 
 🧩 This user is created automatically via EF Core seed data during migration.
 
-💡 About the Project
+## 💡 About the Project
 
 Uepex API Demo simulates a secure backend service for authentication and user management.
 It demonstrates how to:
 
 Implement secure password hashing
-
 Build clean service-based architecture
-
 Use dependency injection and logging
-
 Manage database seeding and migrations
 
 The project follows best practices for backend development in .NET Core environments and can be used as a base for production-grade APIs.
 
-📚 Technologies
 
-Python 3 – Core programming language
 
-Rich – For enhanced console visualization
-
-Pandas – Export tasks to Excel
-
-JSON & CSV – For data persistence and export
-
-✨ Key Features
+## ✨ Key Features
 
 Authentication Flow:
 
@@ -147,13 +139,13 @@ ILogger integrated in both Controller and Service for real-time debug tracing
 ### 📋 Logs / Servicio de Autenticación
 ![Logs](Docs/log_detail.png)
 
-🤝 Contributions & Suggestions
+## 🤝 Contributions & Suggestions
 Contributions, issues, and feature requests are welcome!
 Feel free to open an Issue or submit a Pull Request if you’d like to collaborate or suggest improvements.
 
 📩 For feedback, you can reach me through my GitHub profile.
 
-📝 License
+## 📝 License
 
 This project is licensed under the MIT License — see the LICENSE
  file for details.
