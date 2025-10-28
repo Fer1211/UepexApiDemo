@@ -1,23 +1,21 @@
+
 # 🔐 Uepex API Demo (.NET 9)
 
 A **Web API built with ASP.NET Core 9**, implementing **JWT Authentication**, **Entity Framework Core**, and **BCrypt password hashing** for secure user management.  
-This project is part of my **developer portfolio**, showcasing authentication logic, database persistence, clean architecture, and logging best practices.  
+This project is part of my **developer portfolio**, showcasing authentication logic, database persistence, clean architecture, and logging best practices. 
 
----
+## 📚 Technologies
 
-## 🚀 Features
-
-- 🔑 **JWT Authentication** (JSON Web Tokens)  
-- 🔒 **Password hashing** using `BCrypt.Net`  
-- 🧠 **Entity Framework Core** for ORM and database migrations  
-- 🧾 **Seeded Admin User** (`admin / admin1234`)  
-- 🗂️ **Structured Architecture** (`Controllers`, `Models`, `Services`, `Data`)  
-- 🧰 **Dependency Injection** and `ILogger` for clean service logging  
-- 🧩 **Custom Authentication Service** (`UsuarioService`)  
-- 🧪 **Swagger UI** for endpoint testing  
-- 🛡️ **Role-based access structure** ready for future expansion  
+- ⚙️ **.NET 9 / ASP.NET Core Web API**.
+- 🗃️ **Entity Framework Core**.  
+- 🔐 **JWT Authentication**. 
+- 🔑 **BCrypt.Net-Next (for password hashing)**.  
+- 🧾 **SQL Server LocalDB / SQLite**.  
+- 🧠 **Dependency Injection & Logging**.  
+- 🧰 **Swagger (for API documentation and testing)**.
 
 📦 **Project Structure**
+
 UepexApiDemo/
 ┣ 📁 Controllers/
 ┣ 📁 Data/
@@ -29,95 +27,46 @@ UepexApiDemo/
 ┣ 📜 UepexApiDemo.csproj
 ┗ 📜 README.md
 
----
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
-### 1️⃣ Clone the repository
+1️⃣ Clone this repository:
+
 ```bash
-git clone https://github.com/Fer1211/UepexApiDemo.git
+  git clone https://github.com/Fer1211/UepexApiDemo.git
 cd UepexApiDemo
+```
 
-2️⃣ Restore dependencies
+2️⃣ Restore dependencies:
+```bash
 dotnet restore
+```
 
-3️⃣ Apply migrations (creates the local database)
+3️⃣ Run the application:
+```bash
+dotnet restore
+```
+
+3️⃣ Apply migrations (creates the local database):
+```bash
 dotnet ef database update
+```
 
-4️⃣ Run the API
+4️⃣ Run the API:
+```bash
 dotnet run
+```
 
-
-The API will start on
+The API will start on:
+```bash
 ➡️ http://localhost:5003
+```
 
 👤 Default User
-
-| Usuario | Contraseña | Rol           |
-| ------- | ---------- | ------------- |
-| admin   | admin1234  | Administrador |
+Usuario	Contraseña	Rol
+admin	admin1234	Administrador
 
 🧩 This user is created automatically via EF Core seed data during migration.
-
-📚 Technologies
-
-⚙️ .NET 9 / ASP.NET Core Web API
-🗃️ Entity Framework Core
-🔐 JWT Authentication
-🔑 BCrypt.Net-Next (for secure password hashing)
-🧾 SQL Server LocalDB / SQLite
-🧠 Dependency Injection & Logging
-🧰 Swagger for API documentation and testing
-
-✨ Key Features & Architecture
-🔑 Authentication Flow
-
-Controller: AuthController.cs
-
-Service: UsuarioService.cs
-
-Password verification via BCrypt.Net.BCrypt
-
-Token generation in AuthController using JwtSecurityTokenHandler
-
-🗂️ Database & Persistence
-
-Context: ApplicationDbContext.cs
-
-Entities: Usuario, Estudiante
-
-EF Core used for migrations, seeding, and validation
-
-🧾 Logging
-
-ILogger integrated in both Controller and Service for real-time debug tracing
-
-## 📸 Preview
-
-### 🧠 Project Structure
-![Estructura del Proyecto](docs/project_structure.png)
-
-### 🔐 Login Success (Console)
-![Login Exitoso](docs/login_success_console.png)
-
-### 🧾 Swagger UI (Endpoints)
-![Swagger UI](docs/swagger_ui.png)
-
-### 🪄 JWT Response
-![JWT Token](docs/jwt_response.png)
-
-### 🗄️ Database View (Usuarios Table)
-![Base de Datos](docs/database_tables.png)
-
-### 📋 Logs / Servicio de Autenticación
-![Logs Detallados](docs/log_detail.png)
-
-### 📊 Excel Export (Data Output)
-![Export Excel](docs/excel_export.png)
-
-### 📄 CSV Export (Data Output)
-![Export CSV](docs/csv_export.png)
-
 
 💡 About the Project
 
@@ -134,8 +83,71 @@ Manage database seeding and migrations
 
 The project follows best practices for backend development in .NET Core environments and can be used as a base for production-grade APIs.
 
-🤝 Contributions & Feedback
+📚 Technologies
 
+Python 3 – Core programming language
+
+Rich – For enhanced console visualization
+
+Pandas – Export tasks to Excel
+
+JSON & CSV – For data persistence and export
+
+✨ Key Features
+
+Authentication Flow:
+
+Controller: AuthController.cs
+
+Service: UsuarioService.cs
+
+Password hashing & verification via BCrypt.Net.BCrypt
+
+Token generation in AuthController using JwtSecurityTokenHandler
+
+Database & Persistence:
+
+Context: ApplicationDbContext.cs
+
+Entities: Usuario, Estudiante
+
+EF Core used for migrations, seeding, and validation
+
+Logging:
+
+ILogger integrated in both Controller and Service for real-time debug tracing
+
+
+## 📸 Preview
+
+### 🧠 Project Structure / Estructura del proyecto
+![Project Structure](Docs/project_structure.png)
+
+### 🔐 Login Success (Console) / Inicio de sesión exitoso (Consola)
+![Login Success (Console)](Docs/login_success_console.png)
+
+### 🧾 Swagger UI (Endpoints) / Interfaz de usuario Swagger (Endpoints)
+![Swagger UI (Endpoints)](Docs/swagger_ui.png)
+
+### 🪄 JWT Response / Respuesta JWT
+![JWT Response](Docs/jwt_response.png)
+
+### 📗 Export Excel / Exportar Excel
+![Exportar Excel](Docs/ExcelExport.png)
+
+### 📄 Export CSV / Exportar CSV
+![Exportar CSV](Docs/CSVExport.png)
+
+### 🗄️ Database View (Tables) / Vista base de datos (tablas)
+![Database View (Tables)](Docs/database_tables.png)
+
+### 🗂️ DB Diagram / Diagrama DB
+![DB Diagram](Docs/database_tables.png)
+
+### 📋 Logs / Servicio de Autenticación
+![Logs](Docs/log_detail.png)
+
+🤝 Contributions & Suggestions
 Contributions, issues, and feature requests are welcome!
 Feel free to open an Issue or submit a Pull Request if you’d like to collaborate or suggest improvements.
 
@@ -145,13 +157,3 @@ Feel free to open an Issue or submit a Pull Request if you’d like to collabora
 
 This project is licensed under the MIT License — see the LICENSE
  file for details.
-
-## 💬 Closing Note
-
-Thank you for visiting this project!  
-This API represents my journey into backend development with ASP.NET Core — combining clean architecture, authentication, and security best practices.  
-I hope it helps others learn or inspires new ideas for building robust and maintainable systems.  
-
-Made with 💻, ☕ and a lot of curiosity by  
-**Fernando Ramírez**  
-🩵 *Backend Developer & Continuous Learner*
